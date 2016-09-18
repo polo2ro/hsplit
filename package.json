@@ -1,0 +1,12 @@
+{
+    "name": "hsplit",
+    "description": "split html document using html headers with nodejs",
+    "version": "0.0.0",
+    "main": "index",
+    "engines": {
+        "node": ">= 4.0.0"
+    },
+    "dependencies": {
+        "jsdom": "~9.5.0"
+    }
+}
