@@ -8,6 +8,7 @@ createSections	index.js	/^function createSections(document, article) {$/;"	f
 dependencies	package.json	/^    "dependencies": {$/;"	f
 description	package.json	/^    "description": "split html document using html headers with nodejs",$/;"	f
 engines	package.json	/^    "engines": {$/;"	f
+hsplitDocument	index.js	/^function hsplitDocument(html, rootNodeName) {$/;"	f
 jsdom	package.json	/^        "jsdom": "~9.5.0"$/;"	f
 main	package.json	/^    "main": "index",$/;"	f
 name	package.json	/^    "name": "hsplit",$/;"	f
