@@ -1,7 +1,7 @@
 {
     "name": "hsplit",
     "description": "split html document using html headers with nodejs",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "main": "index",
     "repository": {
         "type": "git",
