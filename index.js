@@ -4,8 +4,9 @@ const jsdom = require('jsdom');
 
 
 /**
+ * Move content of article into sections, do not move empty content
  * @param {DOMDocument} document
- * @param {DOMNode} baseNode
+ * @param {DOMNode} article
  * @returns {DOMNode}
  */
 function createSections(document, article) {
@@ -19,7 +20,7 @@ function createSections(document, article) {
             article.appendChild(section);
         }
 
-        if (!node.textContent) {
+        if (!node.textContent.trim()) {
             return;
         }
 

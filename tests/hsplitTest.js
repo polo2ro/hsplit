@@ -12,7 +12,8 @@ describe('hsplit', () => {
         hsplit.document(html).then(article => {
             assert.equal(2, article.getElementsByTagName('section').length);
             done();
-        });
+        })
+        .catch(done);
 
     });
 
@@ -22,7 +23,8 @@ describe('hsplit', () => {
         hsplit.document(html).then(article => {
             assert.equal(3, article.getElementsByTagName('section').length);
             done();
-        });
+        })
+        .catch(done);
 
     });
 
@@ -32,7 +34,8 @@ describe('hsplit', () => {
         hsplit.document(html).then(article => {
             assert.equal(2, article.getElementsByTagName('section').length);
             done();
-        });
+        })
+        .catch(done);
 
     });
 
@@ -43,7 +46,8 @@ describe('hsplit', () => {
             assert.equal(1, sections.length);
             assert.equal(2, sections[0].getElementsByTagName('p').length);
             done();
-        });
+        })
+        .catch(done);
 
     });
 
