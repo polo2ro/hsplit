@@ -3,6 +3,10 @@
     "description": "split html document using html headers with nodejs",
     "version": "0.0.0",
     "main": "index",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/polo2ro/hsplit.git"
+    },
     "engines": {
         "node": ">= 4.0.0"
     },

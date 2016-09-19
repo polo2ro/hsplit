@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+createSections	index.js	/^function createSections(document, article) {$/;"	f
 dependencies	package.json	/^    "dependencies": {$/;"	f
 description	package.json	/^    "description": "split html document using html headers with nodejs",$/;"	f
 engines	package.json	/^    "engines": {$/;"	f
@@ -11,4 +12,7 @@ jsdom	package.json	/^        "jsdom": "~9.5.0"$/;"	f
 main	package.json	/^    "main": "index",$/;"	f
 name	package.json	/^    "name": "hsplit",$/;"	f
 node	package.json	/^        "node": ">= 4.0.0"$/;"	f
+repository	package.json	/^    "repository": {$/;"	f
+type	package.json	/^        "type": "git",$/;"	f
+url	package.json	/^        "url": "https:\/\/github.com\/polo2ro\/hsplit.git"$/;"	f
 version	package.json	/^    "version": "0.0.0",$/;"	f
