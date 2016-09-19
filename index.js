@@ -10,11 +10,20 @@ const jsdom = require('jsdom');
  */
 function createSections(document, article) {
 
-    let section;
+    let section = null;
     let nodes = [].slice.call(article.childNodes);
 
     nodes.forEach(function (node) {
         if (/^h[1-6]$/i.test(node.nodeName)) {
+            section = document.createElement('section');
+            article.appendChild(section);
+        }
+
+        if (!node.textContent) {
+            return;
+        }
+
+        if (null === section) {
             section = document.createElement('section');
             article.appendChild(section);
         }
@@ -48,7 +57,7 @@ function hsplitDocument(html, rootNodeName) {
                 }
                 let document = window.document;
                 let article = document.getElementsByTagName(rootNodeName)[0];
-                createSections(window.document, article);
+                resolve(createSections(window.document, article));
             }
         );
 
