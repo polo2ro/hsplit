@@ -52,4 +52,13 @@ describe('hsplit', () => {
     });
 
 
+    it('accept missing article', (done) => {
+        let html = '<h2>section 2 title</h2>section 2 content<h2>section 3 title</h2>section 3 content';
+        hsplit.document(html).then(article => {
+            assert.equal(null, article);
+            done();
+        })
+        .catch(done);
+
+    });
 });

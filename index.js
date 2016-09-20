@@ -58,6 +58,11 @@ function hsplitDocument(html, rootNodeName) {
                 }
                 let document = window.document;
                 let article = document.getElementsByTagName(rootNodeName)[0];
+
+                if (undefined === article) {
+                    return resolve(null);
+                }
+
                 resolve(createSections(window.document, article));
             }
         );
