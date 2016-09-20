@@ -36,6 +36,25 @@ function createSections(document, article) {
 
 
 /**
+ * @return {DOMNode}
+ */
+function createRootNode(document, rootNodeName) {
+
+    let body = document.documentElement.childNodes[1];
+
+    let article = document.createElement(rootNodeName);
+
+    for (let i=0; i<body.childNodes.length; i++) {
+        article.appendChild(body.childNodes[i]);
+    }
+
+    body.appendChild(article);
+
+    return article;
+}
+
+
+/**
  * hsplit a html document from a string
  *
  * @param {String} html
@@ -60,7 +79,7 @@ function hsplitDocument(html, rootNodeName) {
                 let article = document.getElementsByTagName(rootNodeName)[0];
 
                 if (undefined === article) {
-                    return resolve(null);
+                    article = createRootNode(document, rootNodeName);
                 }
 
                 resolve(createSections(window.document, article));

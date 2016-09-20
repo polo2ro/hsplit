@@ -4,6 +4,7 @@
 !_TAG_PROGRAM_NAME	Exuberant Ctags	//
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+createRootNode	index.js	/^function createRootNode(document, rootNodeName) {$/;"	f
 createSections	index.js	/^function createSections(document, article) {$/;"	f
 dependencies	package.json	/^    "dependencies": {$/;"	f
 description	package.json	/^    "description": "split html document using html headers with nodejs",$/;"	f
