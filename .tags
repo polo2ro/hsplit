@@ -17,4 +17,4 @@ node	package.json	/^        "node": ">= 4.0.0"$/;"	f
 repository	package.json	/^    "repository": {$/;"	f
 type	package.json	/^        "type": "git",$/;"	f
 url	package.json	/^        "url": "https:\/\/github.com\/polo2ro\/hsplit.git"$/;"	f
-version	package.json	/^    "version": "0.0.1",$/;"	f
+version	package.json	/^    "version": "0.0.2",$/;"	f
